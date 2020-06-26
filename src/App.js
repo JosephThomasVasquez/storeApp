@@ -1,17 +1,15 @@
 import React from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
 import { lightBlue } from '@material-ui/core/colors';
-import Header from './components/Header'
-import Item from './components/Item'
-import Cart from './components/Cart'
+import Header from './components/Header';
+import ContainerDisplay from './components/ContainerDisplay';
+import Cart from './components/Cart';
 import './App.css';
 
 const theme = createMuiTheme({
   palette: {
       primary: {
-        light: '#63ccff',
-        main: '#039be5',
-        dark: '006db3'
+        main: lightBlue[700]
       }
   }
 });
@@ -25,7 +23,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header />
-        <Item />
+        <ContainerDisplay />
         <Cart />
       </header>
     </div>
