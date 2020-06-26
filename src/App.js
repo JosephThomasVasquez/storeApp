@@ -21,11 +21,9 @@ function App() {
   return (
     <MuiThemeProvider theme={theme}>
     <div className="App">
-      <header className="App-header">
         <Header />
         <ContainerDisplay />
         <Cart />
-      </header>
     </div>
     </MuiThemeProvider>
   );
