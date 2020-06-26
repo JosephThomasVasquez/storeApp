@@ -32,6 +32,37 @@
   }
 }
 
+/* Card Style */
+
+.item-card {
+  background: white;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.item-img-card {
+  background: #232323;
+}
+
+.item-title-card {
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.item-description-card {
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.item-price-card {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: right;
+}
+
 
 .nav-button {
   width: 100%;

@@ -1,47 +1,49 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+import Item from './Item';
+
+console.log(Grid);
 
 function ContainerDisplay() {
     
     return (
     <div>
-        <Grid container spacing={2}>
+        <Grid container justify="center" spacing={2}>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
             <Grid item xs={3}>
-                <Paper>Product</Paper>
+                <Item>Product</Item>
             </Grid>
         </Grid>
     </div>);
