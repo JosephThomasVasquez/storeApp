@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nav-button {
+  width: 100%;
+  font-size: 2rem;
+  color: #61dafb;
+}
+
+.text-button {
+  font-size: 1.5rem;
+}
