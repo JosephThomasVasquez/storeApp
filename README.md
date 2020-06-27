@@ -1,3 +1,24 @@
+# React Store Web App
+A Front-End Webstore / Marketplace App for 3D Models.
+
+## Features
+* Item Category selection that displays upload item criteria.
+
+
+## Roadmap
+* Individual Item Card display
+* Clicking on Card updates display to complete item view display or page.
+* Realtime item display upon selection or search criteria
+* Add / Remove to Shopping Cart
+* (Optional) Searchable item database
+* (Optional) Add new item to database
+
+
+## Tools
+React - Material-UI - CSS - HTML
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
