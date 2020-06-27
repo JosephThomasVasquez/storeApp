@@ -8,8 +8,8 @@
   }
 }
 
-.App-header {
-
+.app-header {
+  padding: 2%;
 }
 
 .App-link {
@@ -49,11 +49,17 @@
 
 
 .nav-button {
-  width: 100%;
+  display: inline-block;
+  width: 100px;
   font-size: 2rem;
   color: #61dafb;
 }
 
 .text-button {
   font-size: 1.5rem;
+}
+
+/* Dropdown Menus */
+.item-type {
+  width: 200px;
 }

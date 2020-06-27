@@ -14,8 +14,8 @@ function Cart() {
     return (
     <div>
         <h6>Cart</h6>
-    </div>);
-
+    </div>
+    );
 };
 
 export default Cart;
