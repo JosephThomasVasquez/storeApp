@@ -21,7 +21,7 @@
 .item-card {
   background: white;
   width: 400px;
-  border-radius: 28px;
+  border-radius: 8px;
 }
 
 .item-img-card {
@@ -41,6 +41,7 @@
   font-size: 1rem;
   margin: 0 auto;
   padding: 0 10px;
+  max-height: 20px;
 }
 
 .item-price-card {

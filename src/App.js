@@ -14,7 +14,7 @@ const theme = createMuiTheme({
   }
 });
 
-console.log(lightBlue);
+//console.log(lightBlue);
 
 
 function App() {
