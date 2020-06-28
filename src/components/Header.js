@@ -20,8 +20,9 @@ function Header() {
 
     return (
         
-        <div>
-            <h3 className="app-header">Store</h3>
+        <div className="app-header">
+            <h3 className="header-text">Store</h3>
+            <div className="search-bar">
             <FormControl className="">
                 <InputLabel>Item Type</InputLabel>
                 <Select labelId="itemtype" className="item-type" open={openType} onClose={handleClose} onOpen={handleOpen} value={itemtype} onChange={handleChange}>
@@ -32,6 +33,7 @@ function Header() {
                 </Select>
             </FormControl>
             <Button variant="contained" color="primary" className="nav-button"><span className="text-button">Store</span></Button>
+            </div>
         </div>
     );
 

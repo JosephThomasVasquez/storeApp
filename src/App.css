@@ -1,15 +1,25 @@
 .App {
   background-color: #e7eef3;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Header */
 
 .app-header {
-  padding: 0 0 2% 0;
+  background-color: #0066b9;
+  font-size: 2rem;
+  padding: 0 5% 2% 5%;
+  margin: 0 0 5% 0;
+}
+
+.header-text {
+  color: white;
+}
+
+.search-bar {
+  background-color: white;
+  border-radius: 5px;
 }
 
 .App-link {
@@ -27,12 +37,13 @@
 .item-img-card {
   background: #232323;
   width: 400px;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
 .item-title-card {
   font-size: 1rem;
+  font-weight: 600;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -45,10 +56,10 @@
 }
 
 .item-price-card {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0 auto;
-  padding: 0 10px;
-  text-align: right;
+  padding: 0;
+  text-align: left;
 }
 
 /* Navigation */

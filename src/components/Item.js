@@ -1,25 +1,39 @@
 import React from "react";
 import Card from "@material-ui/core/Card";
-import { CardMedia, CardContent, Typography, Button, CardActionArea } from "@material-ui/core";
+import {
+  CardMedia,
+  CardContent,
+  Typography,
+  Button,
+  CardActionArea,
+} from "@material-ui/core";
 
 function Item(props) {
-
   return (
     <div className="item-card">
       <Card>
-      <CardActionArea>
+        <CardActionArea>
           <CardMedia>
-            <img className="item-img-card" src={`../../images/${props.image}`} alt="3D model"></img>
+            <img
+              component="img"
+              className="item-img-card"
+              src={`../../images/${props.image}`}
+              alt={`Image of a${props.title}`}
+            ></img>
           </CardMedia>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              <p className="item-title-card">{props.title}</p>
-              <p className="item-description-card">{props.description}</p>
-              <p className="item-price-card">{props.price}</p>
+              {props.title}
+            </Typography>
+            <Typography variant="body2" component="p">
+              {props.description}
+            </Typography>
+            <Typography variant="body1" component="div">
+             <div className="item-price-card">{props.price}</div> 
             </Typography>
           </CardContent>
         </CardActionArea>
-        </Card>
+      </Card>
     </div>
   );
 }
