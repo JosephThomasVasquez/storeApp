@@ -1,5 +1,5 @@
 .App {
-  
+  background-color: #e7eef3;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -9,7 +9,7 @@
 }
 
 .app-header {
-  padding: 2%;
+  padding: 0 0 2% 0;
 }
 
 .App-link {

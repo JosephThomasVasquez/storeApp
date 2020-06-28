@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-import { FormControl, InputLabel, MenuItem } from '@material-ui/core';
-import { Button } from '@material-ui/core';
-import { Select } from '@material-ui/core';
-
-
-
-
+import { FormControl, InputLabel, MenuItem, Button, Select } from '@material-ui/core';
 
 function Header() {
 
@@ -30,7 +24,7 @@ function Header() {
             <h3 className="app-header">Store</h3>
             <FormControl className="">
                 <InputLabel>Item Type</InputLabel>
-                <Select labelId="Name" className="item-type" open={openType} onClose={handleClose} onOpen={handleOpen} value={itemtype} onChange={handleChange}>
+                <Select labelId="itemtype" className="item-type" open={openType} onClose={handleClose} onOpen={handleOpen} value={itemtype} onChange={handleChange}>
                     <MenuItem value={'All'}>All</MenuItem>
                     <MenuItem value={'Weapons'}>Weapons</MenuItem>
                     <MenuItem value={'Environment Objects'}>Environment Objects</MenuItem>
