@@ -20,12 +20,15 @@
 
 .item-card {
   background: white;
-  width: 100%;
-  border-radius: 8px;
+  width: 400px;
+  border-radius: 28px;
 }
 
 .item-img-card {
   background: #232323;
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .item-title-card {
@@ -47,6 +50,7 @@
   text-align: right;
 }
 
+/* Navigation */
 
 .nav-button {
   display: inline-block;
