@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Item from './Item';
+import { v4 as uuidv4 } from 'uuid';
 
 const items = [
     {
@@ -36,7 +37,17 @@ const items = [
 ];
 
 function ItemList() {
+
+    let numberOfItems = [];
     
+    for (let i = 0; i < 9; i++ ) {
+
+        numberOfItems.push(
+        <Grid item xs={6} sm={4} md={3}>
+            <Item image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
+        </Grid>);
+    };
+
     return (
     <div>
         <Grid container justify="center" spacing={4}>
