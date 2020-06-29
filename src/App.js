@@ -5,6 +5,7 @@ import Header from './components/Header';
 import ContainerDisplay from './components/ContainerDisplay';
 import Cart from './components/Cart';
 import './App.css';
+import './responsive.css';
 
 const theme = createMuiTheme({
   palette: {

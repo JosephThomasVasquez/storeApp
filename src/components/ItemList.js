@@ -39,32 +39,32 @@ function ItemList() {
     
     return (
     <div>
-        <Grid container justify="center" spacing={2}>
-            <Grid item xs={6} sm={4}>
+        <Grid container justify="center" spacing={4}>
+            <Grid item xs={6} sm={4} md={3}>
                 <Item image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
             </Grid>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={4} md={3}>
                 <Item image={items[1].img} title={items[1].name} description={items[1].description} price={items[1].price}></Item>
             </Grid>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={4} md={3}>
                 <Item image={items[2].img} title={items[2].name} description={items[2].description} price={items[2].price}></Item>
             </Grid>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={4} md={3}>
                 <Item image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
             </Grid>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={4} md={3}>
                 <Item image={items[1].img} title={items[1].name} description={items[1].description} price={items[1].price}></Item>
             </Grid>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={4} md={3}>
                 <Item image={items[2].img} title={items[2].name} description={items[2].description} price={items[2].price}></Item>
             </Grid>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={4} md={3}>
                 <Item image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
             </Grid>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={4} md={3}>
                 <Item image={items[1].img} title={items[1].name} description={items[1].description} price={items[1].price}></Item>
             </Grid>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={4} md={3}>
                 <Item image={items[2].img} title={items[2].name} description={items[2].description} price={items[2].price}></Item>
             </Grid>
             

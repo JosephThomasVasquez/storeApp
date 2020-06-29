@@ -5,7 +5,7 @@ import ItemList from "./ItemList";
 function ContainerDisplay() {
   return (
     <div>
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <ItemList />
       </Container>
     </div>
