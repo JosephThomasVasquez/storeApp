@@ -44,7 +44,7 @@ function ItemList() {
 
         numberOfItems.push(
         <Grid item xs={6} sm={4} md={3}>
-            <Item image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
+            <Item key={uuidv4()} image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
         </Grid>);
     };
 
