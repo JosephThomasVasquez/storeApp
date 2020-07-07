@@ -9,6 +9,9 @@ import {
 } from "@material-ui/core";
 
 function Item(props) {
+
+  const setLength = props.description.substring(0, 48) + '...';
+
   return (
     <div className="item-card">
       <Card>
@@ -26,7 +29,7 @@ function Item(props) {
               {props.title}
             </Typography>
             <Typography variant="body2" component="p">
-              {props.description}
+              {setLength}
             </Typography>
             <Typography variant="body1" component="div">
              <div className="item-price-card">{props.price}</div> 
