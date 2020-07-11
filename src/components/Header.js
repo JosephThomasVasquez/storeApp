@@ -5,12 +5,16 @@ import {
   MenuItem,
   Button,
   Select,
+  TextField,
 } from "@material-ui/core";
 
 function Header() {
-  const [itemtype, setItemType] = useState("");
+  const [itemtype, setItemType] = useState('');
   const [openType, setOpenType] = useState(false);
 
+  const [searchInput, setSearchInput] = useState('');
+
+  // Item Selector List Handler
   const handleChange = (event) => {
     setItemType(event.target.value);
   };
@@ -22,6 +26,11 @@ function Header() {
   const handleOpen = () => {
     setOpenType(true);
   };
+
+  // Search bar input handler
+  const handleSearchInput = () => {
+
+  }
 
   return (
     <div className="app-header">
@@ -47,6 +56,7 @@ function Header() {
             <MenuItem value={"Characters"}>Characters</MenuItem>
           </Select>
         </FormControl>
+        <TextField className="search-field" label="Search" defaultValue="" />
         <Button variant="contained" color="primary" className="nav-button">
           <span className="text-button">Search</span>
         </Button>

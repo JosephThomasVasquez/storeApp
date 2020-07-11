@@ -36,7 +36,7 @@ const items = [
     },
 ];
 
-function ItemList() {
+function ItemList(props) {
 
     let numberOfItems = [];
     
