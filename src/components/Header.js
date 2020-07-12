@@ -6,13 +6,15 @@ import {
   Button,
   Select,
   TextField,
+  Box,
 } from "@material-ui/core";
+import SearchIcon from "@material-ui/icons/Search";
 
 function Header() {
-  const [itemtype, setItemType] = useState('');
+  const [itemtype, setItemType] = useState("");
   const [openType, setOpenType] = useState(false);
 
-  const [searchInput, setSearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState("");
 
   // Item Selector List Handler
   const handleChange = (event) => {
@@ -28,9 +30,10 @@ function Header() {
   };
 
   // Search bar input handler
-  const handleSearchInput = () => {
-
-  }
+  const handleSearchInput = (e) => {
+    setSearchInput(e.target.value);
+    console.log(searchInput);
+  };
 
   return (
     <div className="app-header">
@@ -56,9 +59,17 @@ function Header() {
             <MenuItem value={"Characters"}>Characters</MenuItem>
           </Select>
         </FormControl>
-        <TextField className="search-field" label="Search" defaultValue="" />
-        <Button variant="contained" color="primary" className="nav-button">
-          <span className="text-button">Search</span>
+        <FormControl>
+          <TextField className="search-field" label="Search" defaultValue="" onChange={handleSearchInput} />
+        </FormControl>
+        <Button
+          variant="contained"
+          color="primary"
+          className="nav-button"
+          disableElevation
+        >
+          Search
+          <SearchIcon />
         </Button>
       </div>
     </div>

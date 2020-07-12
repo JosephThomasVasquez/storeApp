@@ -9,7 +9,7 @@
 .app-header {
   background-color: #0066b9;
   font-size: 2rem;
-  padding: 0 5% 2% 5%;
+  padding: 1% 5%;
   margin: 0 0 5% 0;
 }
 
@@ -20,6 +20,7 @@
 .search-bar {
   background-color: white;
   border-radius: 5px;
+  width: 80%;
 }
 
 .App-link {
@@ -72,7 +73,9 @@
 }
 
 .text-button {
+  display: block;
   font-size: 1rem;
+  text-align: center;
 }
 
 /* Dropdown Menus */
@@ -81,5 +84,5 @@
 }
 
 .search-field {
-  width: 30%;
+  width: 100%;
 }
