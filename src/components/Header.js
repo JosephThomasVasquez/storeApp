@@ -31,7 +31,7 @@ function Header() {
 
   // Search bar input handler
   const handleSearchInput = (e) => {
-    setSearchInput(e.target.value);
+    setSearchInput(e.target);
     console.log(searchInput);
   };
 

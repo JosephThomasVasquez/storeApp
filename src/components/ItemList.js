@@ -38,47 +38,32 @@ const items = [
 
 function ItemList(props) {
 
+    console.log(props.id);
+
+    let showItemsPerView = 3;
+
     let numberOfItems = [];
     
-    for (let i = 0; i < 9; i++ ) {
+    for (let i = 0; i < showItemsPerView; i++ ) {
 
         numberOfItems.push(
         <Grid item xs={6} sm={4} md={3}>
             <Item key={uuidv4()} image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
+        </Grid>);
+        numberOfItems.push(
+        <Grid item xs={6} sm={4} md={3}>
+            <Item key={uuidv4()} image={items[1].img} title={items[1].name} description={items[1].description} price={items[1].price}></Item>
+        </Grid>);
+        numberOfItems.push(
+        <Grid item xs={6} sm={4} md={3}>
+            <Item key={uuidv4()} image={items[2].img} title={items[2].name} description={items[2].description} price={items[2].price}></Item>
         </Grid>);
     };
 
     return (
     <div>
         <Grid container justify="center" spacing={4}>
-            <Grid item xs={6} sm={4} md={3}>
-                <Item image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
-            </Grid>
-            <Grid item xs={6} sm={4} md={3}>
-                <Item image={items[1].img} title={items[1].name} description={items[1].description} price={items[1].price}></Item>
-            </Grid>
-            <Grid item xs={6} sm={4} md={3}>
-                <Item image={items[2].img} title={items[2].name} description={items[2].description} price={items[2].price}></Item>
-            </Grid>
-            <Grid item xs={6} sm={4} md={3}>
-                <Item image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
-            </Grid>
-            <Grid item xs={6} sm={4} md={3}>
-                <Item image={items[1].img} title={items[1].name} description={items[1].description} price={items[1].price}></Item>
-            </Grid>
-            <Grid item xs={6} sm={4} md={3}>
-                <Item image={items[2].img} title={items[2].name} description={items[2].description} price={items[2].price}></Item>
-            </Grid>
-            <Grid item xs={6} sm={4} md={3}>
-                <Item image={items[0].img} title={items[0].name} description={items[0].description} price={items[0].price}></Item>
-            </Grid>
-            <Grid item xs={6} sm={4} md={3}>
-                <Item image={items[1].img} title={items[1].name} description={items[1].description} price={items[1].price}></Item>
-            </Grid>
-            <Grid item xs={6} sm={4} md={3}>
-                <Item image={items[2].img} title={items[2].name} description={items[2].description} price={items[2].price}></Item>
-            </Grid>
-            
+            {numberOfItems}
         </Grid>
     </div>);
 
