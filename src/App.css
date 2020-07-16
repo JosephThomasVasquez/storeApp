@@ -20,7 +20,7 @@
 .search-bar {
   background-color: white;
   border-radius: 5px;
-  width: 80%;
+  width: 100%;
 }
 
 .App-link {
@@ -38,7 +38,7 @@
 .item-img-card {
   background: #232323;
   width: 100%;
-  height: 25vh;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -54,6 +54,8 @@
   margin: 0 auto;
   padding: 0 10px;
   max-height: 20px;
+  width: 100%;
+  resize: none;
 }
 
 .item-price-card {
